@@ -21,7 +21,8 @@ defmodule CodeFlow.EnumShortcut do
   Create the desired number of customers. Provide the number of customers to
   create. Something like this could be used in a testing setup.
   """
-  def create_customers(_number) do
+  def create_customers(0), do: :ok
+  def create_customers(number) do
 
   end
 
